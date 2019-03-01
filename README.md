@@ -37,6 +37,13 @@ Even though this cycle applies (more or less) to any kind of spider, there are d
 
 .. module:: scrapy.spiders
    :synopsis: Spiders base class, spider manager and spider middleware
+   
+## Scrapy Project Setup
+Execute the below command to create a Scrapy project:
+
+```scrapy startproject github_trending_bot```
+
+Startproject command will create a directory in the current directory. Use the cd command to change directory and pwd or  cd(alone) to check the name of the current directory.
 
 ## Spider arguments
 Spiders can receive arguments that modify their behaviour. Some common uses for spider arguments are to define the start URLs or to restrict the crawl to certain sections of the site, but they can be used to configure any functionality of the spider.

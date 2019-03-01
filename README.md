@@ -11,7 +11,7 @@ Works on Linux, Windows, Mac OSX, BSD
 ## Install
 The quick way:
 
-pip install scrapy
+```pip install scrapy```
 For more details see the install section in the documentation: https://docs.scrapy.org/en/latest/intro/install.html
 
 Basic executable crawl spidy code for a specified site....if you are using it for different weblinks, have to change the xpath and link
@@ -43,5 +43,11 @@ Spiders can receive arguments that modify their behaviour. Some common uses for 
 
 Spider arguments are passed through the :command:`crawl` command using the -a option. For example:
 
-scrapy crawl myspider -a category=electronics
+```scrapy crawl myspider -a category=electronics```
 
+## Storing Data
+Scrapy provides a convenient way to store the yielded item into a separate file using -o option by:
+
+```scrapy crawl GithubTrendingRepoCrawler -o extracted_data_files/links_JSON.json```
+
+extracted_data_files is a folder and .json is the file format. Scrapy also supports .csv and .xml formats as well.

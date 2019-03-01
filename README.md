@@ -18,7 +18,7 @@ Basic executable crawl spidy code for a specified site....if you are using it fo
 ....
 Effective can pull all the comments from a single page
 
-# Spiders
+## Spiders
 Spiders are classes which define how a certain site (or a group of sites) will be scraped, including how to perform the crawl (i.e. follow links) and how to extract structured data from their pages (i.e. scraping items). In other words, Spiders are the place where you define the custom behaviour for crawling and parsing pages for a particular site (or, in some cases, a group of sites).
 
 For spiders, the scraping cycle goes through something like this:
@@ -38,7 +38,7 @@ Even though this cycle applies (more or less) to any kind of spider, there are d
 .. module:: scrapy.spiders
    :synopsis: Spiders base class, spider manager and spider middleware
 
-# Spider arguments
+## Spider arguments
 Spiders can receive arguments that modify their behaviour. Some common uses for spider arguments are to define the start URLs or to restrict the crawl to certain sections of the site, but they can be used to configure any functionality of the spider.
 
 Spider arguments are passed through the :command:`crawl` command using the -a option. For example:

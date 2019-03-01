@@ -37,3 +37,11 @@ Even though this cycle applies (more or less) to any kind of spider, there are d
 
 .. module:: scrapy.spiders
    :synopsis: Spiders base class, spider manager and spider middleware
+
+# Spider arguments
+Spiders can receive arguments that modify their behaviour. Some common uses for spider arguments are to define the start URLs or to restrict the crawl to certain sections of the site, but they can be used to configure any functionality of the spider.
+
+Spider arguments are passed through the :command:`crawl` command using the -a option. For example:
+
+scrapy crawl myspider -a category=electronics
+
